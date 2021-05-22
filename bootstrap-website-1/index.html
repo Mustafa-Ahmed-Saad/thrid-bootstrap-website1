@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="UTF-8" />
+      <!-- for IE -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- for responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home</title>
+      <!-- دي البوت ستراب و اللي بعدها لو عاوزين نقلب الموقع عربي فبنستخدم البوت ستراب ميني رايت تو ليفت و البوت ستراب الاصلية نشيلها لان الاتنين مع بعض بيعملو مشاكل و بعدين تروح في تاج الاتش تي ام ال و اللانجويج عربي او زد اكس اكس و الديوريشن اللي هو الدي اي ار ار تي ال يعني رايت تو ليفت اهم حاجة مش تستخدم الملفين مع بعض ملف البوت ستراب الاساسية و ملف البوت ستراب رايت تو ليفت يعني لو هتستخدم واحد منهم شيل التاني  -->
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <!-- <link rel="stylesheet" href="css/bootstrap.rtl.css" /> -->
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/master.css" />
+      <!-- اوقات لما بتستدعي البوت ستراب رايت تو ليفت علشان تحول الموقع لعربي فبيحصل مشاكل فلو انت مش عاوز تستخدم البوت ستراب الرايت تو ليفت و عاوز تظبط الدنيا منيوال بايدك انت علشان ميحصلش مشاكل  -->
+      <!-- و اللي انا عاملة بالجكويري ان اللينك دا  هيتضاف في المكان دا لو ضفتط علي الكليك اللي بيحول اللغة -->
+      <!-- <link rel="stylesheet" href="css/my-rtl-bootstrap.css" /> -->
+      <link rel="stylesheet" href="css/media.css" />
+      <link rel="stylesheet" href="css/default_theme.css" />
+      <!-- مكتبة الانيميت دوت سي اس اس اللي تبع الواو -->
+      <link rel="stylesheet" href="css/animate.min.css" />
+      <!-- logo of tab of brawser -->
+      <link rel="apple-touch-icon" sizes="180x180" href="img/my-logo/favicon_io/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="img/my-logo/favicon_io/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="img/my-logo/favicon_io/favicon-16x16.png" />
+      <link rel="manifest" href="img/my-logo/favicon_io/site.webmanifest" />
+      <!-- ? <link rel="icon" type="image/png" sizes="512x512" href="img/my-logo/favicon_io/android-chrome-512x512.png" /> -->
+      <!-- moving-letters -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>
+         var ml = { timelines: {} };
+      </script>
+      <!-- two script for IE -->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   </head>
+   <body>
+      <!-- ! start section tool box and option box -->
+      <section class="option-box">
+         <!-- ? start gread -->
+         <div class="div-gear">
+            <i class="fas fa-cog gear-check fa-2x"></i>
+         </div>
+         <!-- ? end gread -->
+
+         <!-- ? start box option -->
+         <div class="option-content">
+            <!-- * option color -->
+            <div class="color-option">
+               <h4>Color Option</h4>
+               <ul class="list-unstyled">
+                  <li data-value="css/default_theme.css" data-logo="./img/my-logo/red/android-chrome-512x512.png"></li>
+                  <li data-value="css/purple_theme.css" data-logo="./img/my-logo/prurpel/android-chrome-512x512.png"></li>
+                  <li data-value="css/blue_theme.css" data-logo="./img/my-logo/favicon_io/android-chrome-512x512.png"></li>
+                  <li data-value="css/yellow_theme.css" data-logo="./img/my-logo/yellow/android-chrome-512x512.png"></li>
+               </ul>
+            </div>
+            <!-- * option language -->
+            <div class="lang-option">
+               <h4>language Option</h4>
+               <button class="lang-button btn btn-success">EN / AR</button>
+            </div>
+         </div>
+         <!-- ? end box option -->
+      </section>
+      <!-- ! end section tool box and option box -->
+
+      <!-- ! start our navbar -->
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+         <!-- ? start container-fluid to navbar -->
+         <!-- moving letters use class moving-letters indiv and ml3 in its child-->
+         <div class="moving-letters container-fluid">
+            <!-- * logo -->
+            <div class="div-logo">
+               <a href="./index.html">
+                  <img src="./img/my-logo/red/android-chrome-512x512.png" alt="my-logo" />
+               </a>
+            </div>
+            <a class="ml3 navbar-brand hvr-grow-rotate" href="#">MUSTAFA SAAD</a>
+
+            <!-- * menu of nav bar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- * links in nav bar -->
+            <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarSupportedContent">
+               <!-- علشان يزق كل اللي جي بعدو علي اليمين خالص اوممكن اشيل الكلاس دا و ادي الاب جستيفاي كونتينت بس اهمحاجة اشيل الكلاس دا من جوا الاب كلو -->
+               <div class="me-auto"></div>
+               <ul class="navbar-nav mb-lg-0 text-center">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+                     <ul class="dropdown-menu text-center text-md-start" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Programming</a></li>
+                        <li><a class="dropdown-item" href="#">Web Design</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Web Hosting</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="FAQ.html">FAQ</a>
+                     <!-- frequently asked questions -->
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Map</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Contact</a>
+                  </li>
+
+                  <!-- disabled link -->
+                  <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+               </ul>
+
+               <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+            </div>
+         </div>
+         <!-- ? end container-fluid to navbar -->
+      </nav>
+      <!-- ! end our navbar -->
+
+      <!-- ! start carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <!--?  الشرط اللي بتغير الصور او اللي هيا البولين -->
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         </div>
+
+         <!-- ? div tht contain all div tha has img اللي فية كل الديفات اللي ليها خلفيات و بيقلب فيهم -->
+         <div class="carousel-inner">
+            <!-- * carousel item 1 -->
+            <div class="carousel-item active">
+               <img src="./img/1920x800.png" class="d-block w-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h4>First slide label</h4>
+                  <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                  </p>
+               </div>
+            </div>
+            <!-- * carousel item 2 -->
+            <div class="carousel-item">
+               <img src="./img/2.jpg" class="d-block w-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h4>Second slide label</h4>
+                  <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                  </p>
+               </div>
+            </div>
+            <!-- * carousel item 3 -->
+            <div class="carousel-item">
+               <img src="./img/3.png" class="d-block w-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h4>Third slide label</h4>
+                  <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                  </p>
+               </div>
+            </div>
+            <!-- * carousel item 4 -->
+            <div class="carousel-item">
+               <img src="./img/4.jpg" class="d-block w-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h4>Third slide label</h4>
+                  <p>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <!-- ? previous botton < -->
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+
+         <!-- ? next botton > -->
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <!-- ! end carousel -->
+
+      <!-- ! start section about -->
+      <section class="about text-center wow animate__animated animate__bounceIn" data-wow-offset="250" data-wow-iteration="2">
+         <div class="container">
+            <h1 class="mb-sm-2">Meet Our Template <span>MUSTAFA</span></h1>
+            <p class="lead">Hello Let Me interoduce Our New Template That created by <strong>MUSTAFA</strong>. Created with All The love With <strong>Bootstrap 5.0</strong></p>
+         </div>
+      </section>
+      <!-- ! end section about -->
+
+      <!-- ! start section features -->
+      <section class="features text-center">
+         <div class="container">
+            <h2 class="h1 fw-bold">Our Features</h2>
+            <div class="row">
+               <!-- * feature 1 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="feat wow animate__animated animate__fadeInLeft" data-wow-offset="280">
+                     <i class="bi bi-check2"></i>
+                     <h4>100% responsive</h4>
+                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas numquam iure incidunt aliquam blanditiis consectetur quam. Aut sunt, dolorem.</p>
+                  </div>
+               </div>
+               <!-- * feature 2 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="feat wow animate__animated animate__fadeInDown" data-wow-offset="280">
+                     <i class="bi bi-hand-thumbs-up"></i>
+                     <h4>feat</h4>
+                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas numquam iure incidunt aliquam blanditiis consectetur quam. Aut sunt, dolorem.</p>
+                  </div>
+               </div>
+               <!-- * feature 3 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="feat wow animate__animated animate__fadeInUp" data-wow-offset="280">
+                     <i class="bi bi-eye"></i>
+                     <h4>feat</h4>
+                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas numquam iure incidunt aliquam blanditiis consectetur quam. Aut sunt, dolorem.</p>
+                  </div>
+               </div>
+               <!-- * feature 4 -->
+               <div class="col-lg-3 col-md-6">
+                  <div class="feat wow animate__animated animate__fadeInRight" data-wow-offset="280">
+                     <i class="bi bi-pencil"></i>
+                     <h4>feat</h4>
+                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptas numquam iure incidunt aliquam blanditiis consectetur quam. Aut sunt, dolorem.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ! end section features -->
+
+      <!-- ! start testimonial carousel -->
+      <section class="testimonial text-center wow animate__animated animate__fadeInTopLeft" data-wow-offset="360">
+         <div class="container">
+            <h2 class="h1">What Our Client say</h2>
+            <!-- ? same carousel above but there are some edit -->
+            <div id="carousel-testimonial" class="carousel slide" data-bs-ride="carousel">
+               <!-- لازم نغير الاي دي اللي هنا علشان ميكنوش متابة مع الاي دي اللي في الكاروسال اللي فوق -->
+               <!-- * div has all paragraf and client name -->
+               <div class="carousel-inner">
+                  <!-- * section 1 with ouut bolit or img -->
+                  <div class="carousel-item active">
+                     <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                     </p>
+                     <span>Mustafa Saad</span>
+                  </div>
+                  <!-- * section 2 with ouut bolit or img -->
+                  <div class="carousel-item">
+                     <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                     </p>
+                     <span>Mustafa Saad</span>
+                  </div>
+                  <!-- * section 3 with ouut bolit or img -->
+                  <div class="carousel-item">
+                     <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                     </p>
+                     <span>Mustafa Saad</span>
+                  </div>
+                  <!-- * section 4 with ouut bolit or img -->
+                  <div class="carousel-item">
+                     <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, explicabo! Quae quasi voluptas nisi quod inventore provident molestias harum, enim hic nam odio! Quam minus, iure autem ex officia consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Corporis quos quia doloremque, unde nostrum, nihil ipsam consequatur saepe ipsum culpa architecto molestiae sit cum ad, labore soluta rem rerum dolor.
+                     </p>
+                     <span>Mustafa Saad</span>
+                  </div>
+               </div>
+               <!-- هنربط بقي البوتون دي بالاي دي الجديد اللي احنا عملناه عن طريق اننا نحط الاي دي في الاتربيوت الداتا بي اي تارجيت -->
+               <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel-testimonial" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-testimonial" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+               <!-- ? all bolit and imgs -->
+               <div class="carousel-indicators">
+                  <!-- هنربط بقي البوتون دي بالاي دي الجديد اللي احنا عملناه عن طريق اننا نحط الاي دي في الاتربيوت الداتا بي اي تارجيت -->
+                  <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="0" class="m-md-2 active" aria-current="true" aria-label="Slide 1">
+                     <img src="./img/vactror-avatar1.png" alt="vector-avatar" />
+                  </button>
+                  <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="1" class="m-md-2" aria-label="Slide 2">
+                     <img src="./img/vactror-avatar2.png" alt="vector-avatar" />
+                  </button>
+                  <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="2" class="m-md-2" aria-label="Slide 3">
+                     <img src="./img/vactror-avatar3.png" alt="vector-avatar" />
+                  </button>
+                  <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="3" class="m-md-2" aria-label="Slide 4">
+                     <img src="./img/vactror-avatar4.png" alt="vector-avatar" />
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ! end testimonial carousel-->
+
+      <!-- !start section price table -->
+      <section class="price-table text-center">
+         <div class="container">
+            <h2 class="h1 fw-bold">Our Amazing Price</h2>
+            <div class="row">
+               <!-- * price 1 -->
+               <div class="col-lg-3 col-sm-6 col-12">
+                  <div class="price-box wow animate__animated animate__fadeInUp" data-wow-offset="350">
+                     <h2 class="text-primary">Hosting</h2>
+                     <p>$40</p>
+                     <ul class="list-unstyled">
+                        <li>Space: 30GB</li>
+                        <li>Email: 20</li>
+                        <li>Ips: 2ip</li>
+                        <li>Databases: 10</li>
+                        <li>Ftp Accounts: 5</li>
+                     </ul>
+                     <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+               </div>
+               <!-- * price 2 -->
+               <div class="col-lg-3 col-sm-6 col-12">
+                  <div class="price-box wow animate__animated animate__fadeInDown" data-wow-offset="350">
+                     <h2 class="text-success">Vps</h2>
+                     <p>$50</p>
+                     <ul class="list-unstyled">
+                        <li>Space: 50GB</li>
+                        <li>Email: 40</li>
+                        <li>Ips: 5 IP</li>
+                        <li>Databases: 20</li>
+                        <li>Ftp Accounts: 10</li>
+                     </ul>
+                     <a href="#" class="btn btn-success">Order Now</a>
+                  </div>
+               </div>
+               <!-- * price 3 -->
+               <div class="col-lg-3 col-sm-6 col-12">
+                  <div class="price-box wow animate__animated animate__fadeInUp" data-wow-offset="350">
+                     <h2 class="text-info">Delicated</h2>
+                     <p>$70</p>
+                     <ul class="list-unstyled">
+                        <li>Space: 80GB</li>
+                        <li>Email: 40</li>
+                        <li>Ips: 8 IP</li>
+                        <li>Databases: 30</li>
+                        <li>Ftp Accounts: 20</li>
+                     </ul>
+                     <a href="#" class="btn btn-info">Order Now</a>
+                  </div>
+               </div>
+               <!-- * price 4 -->
+               <div class="col-lg-3 col-sm-6 col-12">
+                  <div class="price-box wow animate__animated animate__fadeInDown" data-wow-offset="350">
+                     <h2 class="text-danger">plan #1</h2>
+                     <p>$90</p>
+                     <ul class="list-unstyled">
+                        <li>Space: 90GB</li>
+                        <li>Email: 50</li>
+                        <li>Ips: 10 IP</li>
+                        <li>Databases: 50</li>
+                        <li>Ftp Accounts: 50</li>
+                     </ul>
+                     <a href="#" class="btn btn-danger">Order Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ! end section price table -->
+
+      <!-- ! start section our team -->
+      <section class="our-team text-center">
+         <div class="team">
+            <div class="container">
+               <h2 class="h1 fw-bold">Meet Our Awesome Team</h2>
+               <div class="row">
+                  <!-- * member 1 of team -->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="person mb-lg-0 mb-5 wow animate__animated animate__pulse" data-wow-delay="0.5s">
+                        <img class="img-thumbnail rounded-circle shadow" src="./img/person1-200x200jpg.png" alt="person" />
+                        <h3 class="mt-3">Chris coylir</h3>
+                        <p class="lead">this is chris coyier the founder of the amazing website css-tricks</p>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                     </div>
+                  </div>
+                  <!-- * member 2 of team -->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="person mb-lg-0 mb-5 wow animate__animated animate__pulse" data-wow-delay="0.5s">
+                        <img class="img-thumbnail rounded-circle shadow" src="./img/person2.png" alt="person" />
+                        <h3 class="mt-3">Chris coylir</h3>
+                        <p class="lead">this is chris coyier the founder of the amazing website css-tricks</p>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                     </div>
+                  </div>
+                  <!-- * member 3 of team -->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="person mb-lg-0 mb-5 wow animate__animated animate__pulse" data-wow-delay="0.5s">
+                        <img class="img-thumbnail rounded-circle shadow" src="./img/person3.png" alt="person" />
+                        <h3 class="mt-3">Chris coylir</h3>
+                        <p class="lead">this is chris coyier the founder of the amazing website css-tricks</p>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                     </div>
+                  </div>
+                  <!-- * member 4 of team -->
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="person mb-lg-0 mb-5 wow animate__animated animate__pulse" data-wow-delay="0.5s">
+                        <img class="img-thumbnail rounded-circle shadow" src="./img/person4.png" alt="person" />
+                        <h3 class="mt-3">Chris coylir</h3>
+                        <p class="lead">this is chris coyier the founder of the amazing website css-tricks</p>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ! end section our team -->
+
+      <!-- ! start section subscribe -->
+      <section class="subscribe text-center">
+         <div class="container wow animate__animated animate__bounceInLeft" data-wow-offset="260">
+            <!-- * header and paragraph -->
+            <h2 class="h1 fw-bold mb-0">keep in touch</h2>
+            <p class="lead">singn up for newsletter dont worry about spam we hate it too</p>
+            <!-- * form from bootstrap -->
+            <form class="form-inline d-lg-flex justify-content-lg-center">
+               <input class="form-control btn-lg" type="text" placeholder="Write Your Email" />
+               <button class="btn btn-danger btn-lg"><i class="far fa-edit"></i> subscribe</button>
+            </form>
+         </div>
+      </section>
+      <!-- ! end section subscribe -->
+
+      <!-- ! start section statistic -->
+      <section class="statistic text-center">
+         <div class="data">
+            <div class="container">
+               <h2 class="h1 fw-bold">Our Main Statistic</h2>
+               <div class="row">
+                  <!-- * icon 1 of statistic -->
+                  <div class="col-lg-3 col-md-6">
+                     <div class="stats">
+                        <i class="fas fa-users fa-5x"></i>
+                        <p>9,550</p>
+                        <span>Satisfied User</span>
+                     </div>
+                  </div>
+                  <!-- * icon 2 of statistic -->
+                  <div class="col-lg-3 col-md-6">
+                     <div class="stats">
+                        <i class="fas fa-comments fa-5x"></i>
+                        <p>25,600</p>
+                        <span>Posted Comments</span>
+                     </div>
+                  </div>
+                  <!-- * icon 3 of statistic -->
+                  <div class="col-lg-3 col-md-6">
+                     <div class="stats">
+                        <i class="fas fa-suitcase fa-5x"></i>
+                        <p>3,260</p>
+                        <span>Project Done</span>
+                     </div>
+                  </div>
+                  <!-- * icon 4 of statistic -->
+                  <div class="col-lg-3 col-md-6">
+                     <div class="stats">
+                        <i class="fas fa-life-ring fa-5x"></i>
+                        <p>95,350</p>
+                        <span>Tickets Archieved</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ! end section statistic -->
+
+      <!-- ! start section our skills -->
+      <section class="our-skills">
+         <div class="container">
+            <h2 class="h1 fw-bold text-center mb-5">Our Skills</h2>
+            <div class="row">
+               <!-- ? progress skills -->
+               <div class="col-md-5">
+                  <div class="skills-progress">
+                     <!-- * progress 1 -->
+                     <div class="progress mt-3" style="height: 25px">
+                        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated text-start" role="progressbar" data-progress="90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&nbsp; Html5 / css3 &nbsp;</div>
+                     </div>
+                     <!-- * progress 2 -->
+                     <div class="progress mt-4" style="height: 25px">
+                        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated text-start" role="progressbar" data-progress="85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&nbsp; PHP / jQuery &nbsp;</div>
+                     </div>
+                     <!-- * progress 3 -->
+                     <div class="progress mt-4" style="height: 25px">
+                        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated text-start" role="progressbar" data-progress="80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&nbsp; Wordpress &nbsp;</div>
+                     </div>
+                     <!-- * progress 4 -->
+                     <div class="progress mt-4" style="height: 25px">
+                        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated text-start" role="progressbar" data-progress="95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">&nbsp; Html5 / css3 &nbsp;</div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- ? our skills paragraph and button -->
+               <div class="col-md-6 offset-md-1">
+                  <hr class="d-block d-md-none" />
+                  <div class="skills-info">
+                     <h3>About The Time</h3>
+                     <p class="lead">We Are Specialised Designing And Programmming Team Passionate About Web Design And Creatin Figital We Will Transfer Your Idea To A Figitle Dream And Make Your Wish Come True</p>
+                     <button class="btn btn-primary" type="button">Talk With A Professional</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ! end section our skills -->
+
+      <!-- ! start section contact us -->
+      <section class="contact-us text-center">
+         <div class="fields">
+            <div class="container">
+               <!-- ? icon and pragraph of contact us -->
+               <i class="fas fa-headphones fa-6x"></i>
+               <h2 class="h1 fw-bold mb-0 wow animate__animated animate__fadeInDown">Tell Us What You Fell</h2>
+               <p class="lead mb-5">Feel Free To Contact Us Anytime</p>
+               <!-- ? foem of contact us -->
+               <form>
+                  <!-- لو عاوز تشيل الديف اللي واخد كلاس رو دا و تحط الكلاس تاج الفورم برضو هيمشي الحال لان كلاس الرو دا لازم يكون جوا الكونتينر و علشان ميطلعش برا الشاشة و كلاس الرو دا بيقسملك الرو ل اثناعشر سونت -->
+                  <div class="row">
+                     <!-- * inputs -->
+                     <div class="col-md-6 wow animate__animated animate__fadeInLeft">
+                        <div class="mb-3">
+                           <input type="text" class="form-control btn-lg" placeholder="Username" />
+                        </div>
+                        <div class="mb-3">
+                           <input type="email" class="form-control btn-lg" placeholder="Email" />
+                        </div>
+                        <div class="mb-3">
+                           <input type="text" class="form-control btn-lg" placeholder="Cell Phone" />
+                        </div>
+                     </div>
+                     <!-- * text area -->
+                     <div class="col-md-6 wow animate__animated animate__fadeInRight">
+                        <div class="mb-3">
+                           <textarea class="form-control btn-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Write Your Message"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg w-100">Send</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- ! end section contact us -->
+
+      <!-- ! start section our clients -->
+      <section class="our-clients">
+         <div class="container">
+            <h2 class="h1 fw-bold text-center">Our Clients</h2>
+            <ul class="list-unstyled row">
+               <li class="col-md-2 col-4"><img class="img-thumbnail wow animate__animated animate__bounceIn" src="./img/our-clients/c1.png" alt="bbc" /></li>
+               <li class="col-md-2 col-4"><img class="img-thumbnail wow animate__animated animate__bounceIn" data-wow-delay="0.5s" src="./img/our-clients/c2.png" alt="cnn" /></li>
+               <li class="col-md-2 col-4"><img class="img-thumbnail wow animate__animated animate__bounceIn" data-wow-delay="1s" src="./img/our-clients/c3.png" alt="forbes" /></li>
+               <li class="col-md-2 col-4"><img class="img-thumbnail wow animate__animated animate__bounceIn" data-wow-delay="1.5s" src="./img/our-clients/c4.png" alt="techradar" /></li>
+               <li class="col-md-2 col-4"><img class="img-thumbnail wow animate__animated animate__bounceIn" data-wow-delay="2s" src="./img/our-clients/c5.png" alt="wired" /></li>
+               <li class="col-md-2 col-4"><img class="img-thumbnail wow animate__animated animate__bounceIn" data-wow-delay="2.5s" src="./img/our-clients/c6.png" alt="wsj" /></li>
+            </ul>
+         </div>
+      </section>
+      <!-- ! end section our clients -->
+
+      <!-- ! start ultimate footer section -->
+      <section class="footer">
+         <div class="container">
+            <div class="row">
+               <!-- ? column 1 -->
+               <div class="col-lg-4 col-md-6">
+                  <h3>Sitemap</h3>
+                  <!-- * ul of links -->
+                  <ul class="list-unstyled three-columns">
+                     <li>Home</li>
+                     <li>About</li>
+                     <li>FAQ</li>
+                     <!-- frequently asked questions -->
+                     <li>Code</li>
+                     <li>Design</li>
+                     <li>Host</li>
+                     <li>Solutions</li>
+                     <li>Sitemap</li>
+                     <li>Contact</li>
+                  </ul>
+                  <!-- * ul of social icon -->
+                  <ul class="list-unstyled social-list">
+                     <li><img src="./img/socila-bookmarks/email-icon.png" alt="email" /></li>
+                     <li><img src="./img/socila-bookmarks/facebook-icon.png" alt="facebook" /></li>
+                     <li><img src="./img/socila-bookmarks/google+-icon.png" alt="google+" /></li>
+                     <li><img src="./img/socila-bookmarks/pinterest-icon.png" alt="pinterest" /></li>
+                     <li><img src="./img/socila-bookmarks/rss-icon.png" alt="rss" /></li>
+                     <li><img src="./img/socila-bookmarks/twitter-icon.png" alt="twitter" /></li>
+                  </ul>
+               </div>
+
+               <!-- ? column 2 -->
+               <div class="col-lg-4 col-md-6">
+                  <h3>Text Articles</h3>
+
+                  <!-- * icon section row 1 -->
+                  <div class="d-flex align-items-start">
+                     <div class="flex-shrink-0">
+                        <a href="#"><img src="./img/article/iconfinder_66_5955391.png" alt="icon" /></a>
+                     </div>
+                     <div class="flex-grow-1 ms-3">
+                        <h5 class="mt-0">Top-aligned media</h5>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?</p>
+                     </div>
+                  </div>
+
+                  <!-- * icon section row 2 -->
+                  <div class="d-flex align-items-start">
+                     <div class="flex-shrink-0">
+                        <a href="#"><img src="./img/article/5958926-64.png" alt="icon" /></a>
+                     </div>
+                     <div class="flex-grow-1 ms-3">
+                        <h5 class="mt-0">Top-aligned media</h5>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?</p>
+                     </div>
+                  </div>
+
+                  <!-- * icon section row 3 -->
+                  <div class="d-flex align-items-start">
+                     <div class="flex-shrink-0">
+                        <a href="#"><img src="./img/article/iconfinder_SEO_blog_optimation_article_3059895.png" alt="icon" /></a>
+                     </div>
+                     <div class="flex-grow-1 ms-3">
+                        <h5 class="mt-0">Top-aligned media</h5>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, ex?</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- ? column 3 -->
+               <div class="col-lg-4 col-md-12 col-10">
+                  <h3>Our Awesome Work</h3>
+                  <img class="img-thumbnail" src="img/spongpup-work/Untitle1d.png" alt="work" />
+                  <img class="img-thumbnail" src="img/spongpup-work/Untitle5d.png" alt="work" />
+                  <img class="img-thumbnail" src="img/spongpup-work/Untitled.png" alt="work" />
+                  <img class="img-thumbnail" src="img/spongpup-work/Untitled1.png" alt="work" />
+               </div>
+            </div>
+         </div>
+         <div class="copyright text-center">Copyright &copy; 2020 <span> MUSTAFA </span></div>
+      </section>
+      <!-- ! end ultimate footer section -->
+
+      <!-- ! start section loading -->
+      <section class="loading-overlay">
+         <h2 class="my-class h1 text-center mt-2">please wait...</h2>
+         <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+         </div>
+      </section>
+      <!-- ! end section loading -->
+
+      <!-- ! start scroll to top -->
+      <div id="scroll-top">
+         <i class="fas fa-chevron-up fa-lg"></i>
+      </div>
+      <!-- ! end scroll to top -->
+
+      <!-- ملف الجكويري علشان البوت ستراب تشتغل -->
+      <script src="js/jquery-min.js"></script>
+      <!-- ملف البوت ستراب علشان البوت ستراب نفسها تشتغل -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- ملف الجافا سكربت بتاعي علشان اظبط الاضافات -->
+      <script src="js/plugins-jquery.js"></script>
+      <!-- هنستدعي مكتبة الواو دوت جا اس -->
+      <script src="js/wow.min.js"></script>
+      <!-- بعد ما استدعينا الواو علشان نشغلها لازم نعمل التالي لان بدون الكود دا الواو مش هتشتغل فلازم تغلها بالكود التالي -->
+      <script>
+         new WOW().init();
+      </script>
+   </body>
+</html>
+
+<!--
+container                  // بيعمل بادين من اليمين و الشمال كبير شوية بحيث يستخدم علان تحط فية المحتوي
+container-fluid            // البادينج اللي بيعملو الكونتينر دا من اليمين و الشمال مش كبير فيعتبر بيملا الشاشة
+
+row                        // فية خاصية ديسبلاي فليكس و بالتالي بيقسم المساحة اللي جوا ل اثناعشر يونيت
+
+col-lg-3                   // علشان تدي عرض كام يونيت
+
+clearfix                   // علشان تدي كلير بوث
+
+offset-lg-3                // علشان تعملو مارجين من الليفت كام يونيت
+
+col                        // الاوردر دا هيكون اول واحد هيترتب و بعدو الاوردر واحد و هاكذا و الاوردر اكبر حاجة فية اوردر خمسة و في اوردر فيريت و لاست و دول بيخلو العنصر اول او اخر عنصر اجباري غصب عن الكل حتي لو في حجات واخدة كلاس كولم فقط برضو هتيجي قبلها و خلي بالك لازم قبل ما تكتب الاوردر تكتب كلاس الكولم علشان هوا اللي بيدي العنصر خاصية فليكس
+col order-5                // دا اكبر اوردر و لازم تكتب قبلو كولم يعني لو عاوز ارتب العناصر اول عنصر عاوزة يجي في الاول هيدو كلاس كولم فقك و اللي بعدو كلاس كولم اوردر واحد و هاكذا
+col order-lg-5             // لو عاوز ترتبهم بترتيب معين في شاشة معينة فيما فوق و لوعاوز تغير بقي في الشاشة اللي اكبر منها بتدي اوردر تاني زي ما انت عاوز
+col order-md-first         // الاوردر لما بتديلو ترتيب بيرتبهم علي العناصر اللي واخدة اوردر زيهم رقم و لكن الاوردر الفيرست دا بيجي قبل كل العناصر سواء واخدة اوردر او لا
+col order-md-last          // زي الاوردر فيرست و لكن بتحط العنصر في الاخر خالص
+
+lead                       // لو في برجراف و عاوز تظبط الخط بتاعو و شكلو
+
+img-fluid                  // بيدي الصورة عرض علي حسب الاب بحيث الصورة لو كبيرة متخرجش من الاب يعني بيدي ماكس ويدث مية في المية 
+
+mx-auto d-block rounded    // الماكس اوتو بتدي بادينج و مارجين من اليمين و الشمال باوتو للصورة و الديسبلاي بلوك لازم تدية للصورة علشان الماكس اوتو يسمع و الرونديد دي حاجة زيادة علشان حواف الصورة تتظبط
+
+mx-lg-0                    // بيخلي الحاجى تلزق من الشمال لانو بيلغي المارجن و يخلية من اليمين و الشمال صغر
+
+img-thumbnail              // بتخلي الصورة تلزق في الشمال لانو بيظبط الصورة ظبطة حلوة و بيديا بوردر حلوة كدا وي البرواز و يخليها متطلعش برا الاب لانو هيدي الصورة عرض ماكس مية في المية
+
+.rounded-circle            // بيخلي الصورة مدورة علش شكل دايرة لانو بيدي خاصية البوردر راديوس خمسين في المية
+
+.shadow                    // بيدي شادو شكلو جيل
+.shadow-lg                 // بيدي شادو في الشاشات اللارج و انت طالع
+.shadow-md                 // بيدي شادو في الشاشات الميديام و انت طالع
+.shadow-none               // ميلغي الشادو و يخلية نان
+
+.img-thumbnail rounded-circle shadow // لو اديت الكلاسات دي كلاها للصورة هيخليها مدورة و يحطلك فيها شادو و يديلك برواز كويس للصورة
+
+navbar navbar-dark bg-dark // علشان اخلي الناف بار اسود حيث ان كلاس الناف بيدي الناف ديسبلاي فليكس و بيظبطو و النافبار دارك او لايت دا بيظبط العناصر اللي جوا الناف برا لو هتخلي لونو دارك او لايت و البي جي دارك او البي جي بؤيماري دا اللي بيدي الباك جراوند اللون و لو عاوز الباك جراوند تكون بيضة و تظبط العناصر الللي جوا بناء علي ان اللون هيكون ابيض فمش هكتب بي جي دارك او بريماري و بدل ما اكتب ناف دارك هكتب ناف ليت
+
+navbar-expand-lg           // دي علشان الناف بار يبقي اللينكات ظاهرة و المنيو مختفية و ديما بنستخدمها في الشاشات الكبيرة و لو شلتو هتلاقي المنيو ظهرت علشان كدا بنحطو في الشاشات الكبيرة علشان لما الشاشة تصغر الكلاس يتشال و المنيو تظهر في الشاشت اللي اقل من دي
+
+sticky-top                 // بيسبت النافبار بحيث لما تعمل سكرول يفضل ثابت معاك يعني بيدية بوزيشن ستاكي و يكون من التوب زيرو
+
+navbar-brand               // دا كلاس بيدي لون للبراند اللي هتكون علي المال فوق في الموقع او اللوجوا و بيديها شوية تنسيقات خفيفة
+
+dropdown-divider           // الكلاس دا بيتحط لل اتش ار علشان يظبطو علي حسب المحتوي اللي حولية فممكن نحطو في المنيو اللي بتنزل علشان نشد خط و هنحطو في ال اي بدل ما نحط فيها لينك بل هنحطو في حالة لو عاوزين نشد خط
+
+.me-auto                   // الكلاس دا بيدي مارجين رايت اوتو و بالتالي بيزق كل العناصر الباقية في الصف ناحية اليمين خالص فلما تعوز تعمل كدا تدي ديف فاضي الكلاس دا و هوا هيزق كل اللي بعدو ناحية اليمين خالص علي قدر ما يمكن او ممكن تشيل الكلاس دا بالديف اللي فية و تدي للاب لو كان فليكس تديلو جستيفاي كونتينت بس خد بالك ان ميكونش في حاجة جوا الاب دا واخدة كلاس مي اوتو
+<div class="me-auto"></div> 
+
+.d-none .d-md-block        // الكلاسين دول علشان الحاجة تختفي في الشاشات الصغيرة و تظهر من بداية الشاشات المتوسطة و انت طالع
+.d-screen-value of dهsplay // علشان تدي ديسبلاي بلوك او ان لاين او انلاين بلوك
+
+.text-center               // بيوسطن اي تكست جوا العنصر اللي هياخد الكلاس دا
+
+<strong></strong>          // التاج دا في البوت ستراب واخد تنسيقات حلوة انت بس مجرد بتحطو علي اي كلمة او جملة عاوز تخليها بولد
+
+.m-screen-2                // علشان تدي مارجين نص ريم
+
+.list-unstyled             // علشان يشيل الستايل الطبيعي بتاع اليو ال يعني بيدي خاصية الليست ستايل نان و البادينج ليفت زيرو
+
+.btn .btn-primary          // كلاس البوتون دا علشان يخليلك تاج الاية او تاج البوتون شكلو شكل زرار جميل بتنسيقات كويس و كلاس البوتون بريماري علشان يديلك لون للزرار
+.btn .btn-success          // بيدي لون اخضر لكن البريماري اللي قبلو كان بيدي لون ازرق
+.btn .btn-info             // بيدي لون سماوي 
+.btn .btn-danger           // بيدي لون احمر
+
+.text-primary              // بيدي لون ازرق
+.text-success              // بيدي لون اخصر
+.text-info                 // بيدي لون سماوي
+.text-danger               // بيدي لون احمر
+
+.mt-screen-4               // بتدي مارجين توب
+
+.form-control              // بتدي الكلاس دا للانبوت اللي هوا حقل الادخال اللي موجود جوا الفورم علشان يديلو شوية تنسيقات كويسة و يديلو عرض مية في المية و دسبلاي بلوك فانت ابقي ادي للانبوت الكلاس دا و لو مش عاوزة ياخد العرض امل عدل في الديسبلاي خليها ان لاين بلوك و خلي العرض علي حسب رغبتك
+
+.btn-lg                    // علشان يكبر حقل الادخال او التيكست اريا او علشان يكب البوتون
+.btn-sm                    // علشان يصغر حقل الانبوت او البوتون
+
+.justify-content-lg-center // دا علشان تدي خاصية الجستفاي كونتينت في اي شاشة انت عاوزها و لازام الديسبلاي يكون فليكس 
+.justify-content-screen-value
+
+.offset-screen-value      // هيعملك مارجين من الشمال ممكن لما تعوز تفصل بين ديفين تدي الاول 5 يونيت و التاني 6 يونيت و بينهم تعمل ديف فاضي و تديلو كلاس الاوفسيت
+
+.progress                 // بتدي الكلاس دا للديف اللي انت عاوز تعمل فية البروجريس هينسقو و يظبطو و هيديلو ديسبلاي فليكس
+
+.progress-bar             // كلاس البروجريس بار دا بتدية للبروجريس بار نفسو علشان يظبطو و يديلو شوية تنسيقات كويسة و يديلو ديسبلاي فليكس و خلي بالك كلاس البروجريس فقط دا بندية للديف الاب بتاع الديف اللي هياخد كلاس البروجريس بار
+
+.progress-bar-striped     // الكلاس دا بيدي كل اكثر جمال للبروجريس بار و بيديلو شكل اشركة كدا بالجنب
+
+..progress-bar-striped .progress-bar-animated  // علشان اخلي البروجريس اللي ايدتو كلاس البروجريس بار استريبد متحرك و فية انيمسشن بسيط كدا فهزود علية كلاس بروجريس بار انيميتيد و طبعا لو حطيت كلاس البروجريس بار انيميتيد من غير محط كلاس البروجريس بار ستريبيد يبقي ملوش لازمة لانو كدا هيعمل انيميت لاية
+
+.bg-success               // لو عاوز تدي اي حاجة باك جراوند لون من الوان الساكسيس او الانفور ميشن او البريماري او الدينجر او الوارنينج
+
+.form-control             // بتدي فورم كنترول للانبوت او خقل الادخال علشان تدي شوية تنسيقال تلحق الادخال و تديلو ديسبلاي بلوك و عرض مية في المية
+
+.h1                       // علشان الصفحة تكون تمام و مفيهاش اي غلط و تكون صديقة لمحركات البحث فانت لازم صفحتك يكون فيها اتش وان واحد فقط طيب دلوقتي لو انت عاةو تعمل اكتر من اتش وان في الصفحة فانت بتعمل اي اتش زي اتش تو او اتش ثري و بعدين تديها كلاس اتش وان و بكدا يبقي انت اخدت تنسيقات اتش وان و مبقاش في الصفحة عندك غير اتش وان واحدة فقط و دا المطلوب
+
+.fw-bold                  // مش محتاج شرح بيخلي الفونت ويت بولد
+
+.w-75                     // يدي ويدث مية في خمسة و سبعون في المية
+
+.m-auto                   // بتدي مارجين اوتو من اليومين و الشمال فبتخلي العنصر في النص
+-->
+
+<!-- data-bs-target="#navbarSupportedContent"  // الاتربيوت دا لما بتحطو في ايليمنت البوتون او الاية فلما تضغط علية هيروح عند العنصر اللي واخد الاي دي دا و يفتحو -->
+
+<!-- 
+nav bar by bootstrap 
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+  <nav class="navbar navbar-dark bg-primary navbar-expand-md">
+  <nav class="navbar navbar-light navbar-expand-md">
+-->
+
+<!-- علشان اقسم عناصر جوا عنصر من عناصر الجريت سيستم لازم احط العناصر دي جوا ديف  واخد كلاس رو لانو بيخلي المساحة اللي جواه تبقي اثنا عشر يونيت -->
+
+<!-- دا لما تيي تعمل الميديا هتلاقي الكلام دا في اليوتيليتي بتعت البوت ستاراب في الفليكس -->
+<!--
+<div class="d-flex align-items-center">
+  <div class="flex-shrink-0">
+    <a href="#"><img src="./img/article/iconfinder_66_5955391.png" alt="icon" /></a>
+  </div>
+  <div class="flex-grow-1 ms-3">
+    This is some content from a media component. You can replace this with any content and adjust it as needed.
+  </div>
+</div>
+-->
+
+<!-- لو عاوز تعمل كدا زي مسار للصفحة الحالية اللي انت فيها في حاجة في البوت ستراب في الكومبوننت اسمها بريد كرومب -->
+<!-- breadcrumb -->
+<!-- <nav aria-label="breadcrumb">
+   <ol class="breadcrumb">
+     <li class="breadcrumb-item"><a href="#">Home</a></li>
+     <li class="breadcrumb-item active" aria-current="page">Library</li>
+   </ol>
+</nav> -->
+
+<!-- في حاجة اسمها كولابس في البوت ستراب و في الكومبوننت و دي علشان لو عاوز تعمل صفحة للاسئلة المتكررة فالكولابس دي هتنفعك جراوند -->
+<!-- ممكن نقول عليها مولابس او اكورديون اللي هيا الالية الموسيقية دي -->
+<!-- collapse or accordion-->
+<!-- <p>
+   <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+ </p>
+ <div class="row">
+   <div class="col">
+     <div class="collapse multi-collapse" id="multiCollapseExample1">
+       <div class="card card-body">
+         Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+       </div>
+     </div>
+   </div>
+   <div class="col">
+     <div class="collapse multi-collapse" id="multiCollapseExample2">
+       <div class="card card-body">
+         Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+       </div>
+     </div>
+   </div>
+ </div> -->

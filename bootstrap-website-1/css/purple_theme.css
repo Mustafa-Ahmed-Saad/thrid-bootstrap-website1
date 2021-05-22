@@ -1,0 +1,84 @@
+/**** start default theme ****/
+/* active link */
+.option-box .color-option {
+   border: 2px solid #e426d5;
+}
+
+.option-box .div-gear,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.carousel-indicators .active {
+   /* background-color: #bb120f; */
+   background-color: #e426d5;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link:hover:not(.active),
+.dropdown-item:hover,
+.dropdown-item:focus,
+.about h1 span,
+.testimonial .carousel-item span,
+.footer h3,
+.footer .copyright span {
+   /* color: #0895d1; */
+   color: #e426d5;
+}
+
+.dropdown-menu {
+   border-bottom: 4px solid #e426d5;
+   border-top: 3px solid #e426d5;
+}
+.option-box .lang-option {
+   border: 2px solid #e426d5;
+   border-top: none;
+}
+.our-skills .progress {
+   background-color: #e426d5;
+}
+/**** end default theme ****/
+
+/* change scroll style */
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+   /* box-shadow: inset 0 0 5px gray; */
+   box-shadow: inset 0 0 5px #e426d5;
+   border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #e426d5;
+   border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #b41aa7;
+}
+
+/* start about-features  */
+.about-features svg {
+   color: #b41aa5;
+}
+/* end about-features  */
+
+/* start FAQ Accordion (collapse or accordion) */
+.faq-questions a.btn-outline-primary,
+button.btn-outline-primary {
+   color: #b41aa7;
+   border-color: #b41aa7;
+}
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+   box-shadow: 0 0 0 0.25rem rgb(253 13 253 / 50%);
+}
+.btn-outline-primary:hover {
+   background-color: #b41aa7;
+   color: #fff !important;
+}
+.faq-questions .card {
+   box-shadow: 0px 3px 10px 0px #e426d5;
+}
+/* end FAQ Accordion (collapse or accordion) */

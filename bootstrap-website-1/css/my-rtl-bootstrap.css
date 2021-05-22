@@ -1,0 +1,62 @@
+/* @media (min-width: 992px) {
+   .offset-lg-0 {
+      margin-left: 0 !important;
+}
+} */
+
+/*** تحويل الصفحة لعربي ***/
+/* علشان اتجاه البادي بدل من الشمال لليمين يبقي من اليمين للشمال و بالتالي الكلام اللي في مل الحقل بتاع الادخال و البليس هولدر هيروح يمين */
+body {
+   direction: rtl; /* في اي موقع عربي الخاصية دي اساسية */
+}
+
+/* start cursor */
+/* .carousel { */
+/* هنخليها من الشمال لليمين علشان لو خليتها من اليمين للشمال بيحصل مشكلة و لما بضغط علي السهم اليمين يوديني للصورة الشمال و العكس فهخلية من الشمال لليمين لانو كدا كدا مش هياسر في الموقع العربي */
+/* direction: ltr; */
+/* } */
+.carousel-indicators {
+   direction: ltr;
+}
+/* end cursor */
+
+nav[aria-label='breadcrumb'] .breadcrumb {
+   direction: ltr;
+   justify-content: flex-end;
+}
+/* start footer */
+.footer .list-unstyled {
+   padding-right: 0;
+}
+
+.footer .social-list {
+   display: flex;
+   flex-wrap: wrap;
+}
+.footer .social-list li {
+   margin-right: 0;
+   margin-left: 5px;
+}
+.footer .ms-3 {
+   margin-left: 0 !important;
+   margin-right: 1rem;
+}
+/* ens footer */
+
+/* start our skills */
+@media (min-width: 768px) {
+   .our-skills .offset-md-1 {
+      margin-left: 0;
+      margin-right: 8.33333%;
+   }
+}
+.our-skills .progress {
+   flex-direction: row-reverse;
+}
+/* end our skills */
+
+/* start price table */
+.price-table .price-box ul {
+   padding-right: 0;
+}
+/* end price table */

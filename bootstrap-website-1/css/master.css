@@ -1,0 +1,615 @@
+/**** start over riding on bootstrap ****/
+html {
+   scroll-behavior: smooth; /* الخاصية دي بتكون في البوت ستراب اصلا بس كتبتها برضو برضو للمعرفة */
+}
+body {
+   overflow: hidden;
+   /* علشان لما الديف بتاع اللودينج يكون موجود و ظاهر ميكونش في سكرول و لكن لما الديف يتشال و الصفحة تكون حملت بنشبل الخاصية دي علشان نرجع السكرول */
+   overflow-x: hidden !important; /* Hide horizontal scrollbar */
+   /* علشان لما الانيميشن تطلع و تبدا تظهر مش يعنلي سكرول من تحت و بعدين لما الانيميشن يخلص فالعنصر بيبقي في مكانة فالسكرول بيختفي والكلام دا بيحصل بسرعة بس بيكون شكلو بايخفانا علشان كدا هعمل الخاصية دي علشان اخفي السكرول اللي تحت خالص  */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+}
+.lead {
+   font-family: 'Roboto', sans-serif;
+   font-weight: unset;
+}
+#carouselExampleCaptions .carousel-caption p {
+   font-family: 'Oxygen', sans-serif;
+   line-height: 27px;
+}
+
+/* start section tool box and option box */
+.option-box {
+   position: fixed;
+   top: 100px;
+   z-index: 9999;
+}
+.option-box .option-content {
+   display: flex;
+   flex-direction: column;
+}
+.option-box .color-option {
+   float: left; /* علشان الجير يجي جنبو */
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   width: 200px;
+   text-align: center;
+   display: none;
+}
+
+.option-box .color-option ul li {
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   margin-right: 3px;
+   cursor: pointer;
+}
+.option-box .lang-option {
+   float: left; /* علشان الجير يجي جنبو */
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+   width: 200px;
+   text-align: center;
+   display: none;
+}
+.option-box .div-gear {
+   max-width: 45px;
+}
+.option-box .gear-check {
+   padding: 5px;
+   color: #fff;
+   cursor: pointer;
+}
+/* end section tool box and option box */
+
+/*start nav bar*/
+.div-logo {
+   width: 45px;
+   margin-right: 20px;
+}
+.div-logo img {
+   max-width: 100%;
+   transition: 1s;
+   cursor: pointer;
+}
+.div-logo img:hover {
+   transform: rotate(360deg);
+   transition: 1s;
+}
+.navbar-dark .navbar-brand {
+   font-family: 'Dancing Script', cursive;
+   transition: 0.5s;
+}
+.sticky-top {
+   z-index: 9999;
+}
+.nav-link {
+   padding: 1.3rem 1rem;
+   font-weight: 600;
+}
+
+.navbar {
+   padding-top: 0;
+   padding-bottom: 0;
+   min-height: 65px;
+}
+
+.nav-item:not(:last-child) {
+   margin-right: 10px;
+}
+
+.navbar-toggler.collapsed {
+   box-shadow: none;
+}
+
+.navbar-brand {
+   font-size: 2.3em;
+}
+
+.dropdown-menu {
+   /* background-color: #333; */
+   background-color: #212529;
+}
+
+.dropdown-menu[data-bs-popper] {
+   margin-top: 0;
+}
+
+.dropdown-item {
+   color: antiquewhite;
+   transition: padding-left 0.3s;
+}
+
+.dropdown-item:hover {
+   padding-left: 20px;
+}
+
+.navbar hr:not([size]) {
+   color: wheat;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+   background-color: transparent;
+}
+/*end nav bar*/
+
+/* start carousel */
+.carousel-caption {
+   background-color: rgba(3, 3, 3, 0.4);
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+/* .carousel-inner {
+  max-height: 90vh;
+} */
+
+.carousel-indicators [data-bs-target] {
+   outline: none;
+}
+/* end carousel */
+
+/* start section about */
+.about .lead {
+   color: #888;
+   font-size: 22px;
+   margin-top: 15px;
+}
+
+/* end section about */
+
+/* start section features */
+.features {
+   background-color: #eee;
+}
+
+.features .feat {
+   margin-bottom: 30px;
+}
+
+.features .feat p {
+   line-height: 2em;
+}
+
+.features .feat i {
+   font-size: 30px;
+   margin-bottom: 15px;
+   display: inline-block;
+   color: #888;
+}
+/* end section features */
+
+/* start testemonial section carousel*/
+.testimonial h2 {
+   font-weight: bold;
+}
+.testimonial .lead {
+   line-height: 2em;
+   margin-bottom: 5px;
+}
+.testimonial .carousel-item span {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.testimonial #carousel-testimonial {
+   min-height: 160px;
+}
+
+.testimonial .carousel-indicators {
+   position: unset; /* علشان تفضل مكانها و متتحركش */ /* علشان لو خليتها بوزين ابسليوت زي ما هيا واخدة في البوت ستراب هتلاقيها بتطلع للسليدر اللي فوق فاحنا هنلغي منها الوزيشن خالص علشان مش تتخركمن مكانها */
+   /* or */
+   /* position: static; is the defult value*/
+   margin-top: 25px;
+}
+
+.testimonial .carousel-indicators [data-bs-target] {
+   min-width: 71px;
+   min-height: 71px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #333;
+   border-radius: 50%;
+   outline: none;
+   transition: all 1s;
+}
+
+.testimonial .carousel-indicators [data-bs-target] img {
+   max-width: 93%;
+   border-radius: 50%;
+}
+/* end testemonial section carousel*/
+
+/* start section price table */
+.price-table {
+   background-color: #eee;
+}
+
+.price-table .price-box {
+   background-color: #fff;
+   padding: 10px;
+   border: 1px solid #ddd;
+   margin-bottom: 15px;
+}
+
+.price-table .price-box h2 {
+   margin: 5px 0 15px;
+}
+.price-table .price-box:hover p {
+   transform: scale(1.1, 1.1) rotate(360deg);
+   border: 2px solid;
+}
+.price-table .price-box p {
+   font-size: 35px;
+   font-weight: bold;
+   color: #666;
+   width: 100px;
+   height: 100px;
+   background-color: #f3f3f3;
+   border-radius: 50%;
+   line-height: 100px;
+   margin: auto;
+   border: 2px solid transparent;
+   transition: 0.5s;
+}
+.price-table .price-box ul {
+   line-height: 250%;
+   font-size: 18px;
+}
+.price-table .price-box a {
+   margin-bottom: 5px;
+}
+.btn-info,
+.btn-info:hover {
+   color: #fff;
+}
+/* end section price table */
+
+/* start section our team */
+.our-team {
+   background: url('../img/animate-gif.gif') no-repeat center center/cover fixed;
+   /* or */
+   /* background: url('../img/team.jpg') no-repeat center center scroll; */
+   /* width: 100%; */
+}
+.our-team .team {
+   background-color: rgba(2, 2, 2, 0.7);
+   color: #fff;
+}
+
+.img-thumbnail {
+   background-color: transparent;
+}
+
+.our-team .person img {
+   filter: grayscale(100%);
+   transition: filter 0.3s;
+}
+
+.our-team .person:hover img {
+   filter: none;
+}
+/* end section our team */
+
+/* start subscribe */
+.subscribe {
+   background-color: #eee;
+}
+
+.subscribe h2 {
+   color: #888;
+   letter-spacing: 2px;
+}
+
+.subscribe p {
+   margin-bottom: 40px;
+}
+
+.subscribe .form-control {
+   width: 300px;
+}
+
+/* end subscribe */
+
+/* start statistic */
+.statistic {
+   background: url('../img/pexels-pixabay-220201.jpg') no-repeat center center/cover fixed;
+   /* or */
+   /* background-size: cover */
+   min-height: 400px;
+}
+.statistic .data {
+   background-color: rgba(2, 2, 2, 0.7);
+   color: #b6b5b5;
+   min-height: 400px;
+}
+
+.statistic .stats {
+   transition: 0.3s ease-in-out;
+   margin-bottom: 30px;
+}
+.statistic .stats:hover {
+   color: #fff;
+}
+.statistic p {
+   font-size: 60px;
+   font-weight: 600;
+   margin-bottom: 0;
+}
+.statistic span {
+   font-size: 18px;
+}
+/* end statistic */
+
+/* start section our skills */
+.our-skills h3 {
+   font-weight: bold;
+   margin-top: 0;
+}
+.our-skills .skills-progress .progress-bar.text-start {
+   text-indent: 15px;
+   width: 0;
+   /* لو مدتش الويدث دا الترانزيشم مش هيشتغل او مش هتحس بية لانك محددتش الويدث اللي في الاول كام لانو بياخد اول فيمة و بعدين يمشي براحة لغاية اخر قيمة لكن انت لو محددثش ويدث صفر هيعتبر اول قيمة هيا اخر قيمة و يروحلها علي طول من غير اي تاثسر ولا اكنك عامل ترانسيشن */
+   transition: 3s;
+}
+/* end section our skills */
+
+/* start section contact us */
+.contact-us {
+   background: url('../img/contact-us.png') no-repeat center center/cover fixed;
+   min-height: 400px;
+}
+.contact-us .fields {
+   background-color: rgba(9, 9, 9, 0.8);
+   min-height: 400px;
+   color: #ddd;
+}
+.contact-us textarea.form-control {
+   min-height: calc(4.9em + 0.75rem);
+}
+.contact-us input[type='text'],
+.contact-us input[type='email'],
+.contact-us textarea,
+.contact-us .form-control:focus {
+   background-color: rgba(82, 78, 78, 0.7);
+   color: #fff;
+   border: none;
+}
+/* end section contact us */
+
+/* start section our clients */
+.our-clients {
+   background-color: #eee;
+}
+.our-clients li img {
+   opacity: 0.7;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   transition: all 0.4s ease-in-out;
+}
+.our-clients li img.img-thumbnail {
+   border: none;
+}
+.our-clients li img:hover {
+   opacity: 1;
+}
+/* end section our clients */
+
+/* start ultimate footer section */
+.footer {
+   background-color: #111;
+   color: #aaa;
+   padding-top: 20px;
+}
+.footer a {
+   color: #aaa;
+}
+.footer a:hover {
+   color: #fff;
+}
+.footer h3 {
+   letter-spacing: 1px;
+   margin: 30px 0 20px;
+}
+.footer .three-columns {
+   overflow: hidden;
+}
+.footer .three-columns li {
+   width: 33.3333%;
+   float: left;
+   padding: 12px 0;
+}
+.footer .social-list {
+   overflow: hidden;
+   margin: 20px 0 10px;
+}
+.footer .social-list li {
+   float: left;
+   margin-right: 5px;
+   opacity: 0.5;
+   transition: all 0.4s;
+}
+.footer .social-list li:hover {
+   opacity: 1;
+}
+.footer .img-thumbnail {
+   background-color: rgba(0, 0, 0, 0.2);
+   border-color: #5b5050;
+   margin-bottom: 6px;
+   max-width: 145px;
+}
+.footer .copyright {
+   background-color: #333;
+   color: #aaa;
+   padding: 15px 0;
+   margin-top: 30px;
+   font-size: 18px;
+}
+.footer .copyright span {
+   font-family: 'Dancing Script', cursive;
+}
+/* end ultimate footer section */
+
+/**** end over riding on bootstrap ****/
+
+/* start section loading */
+.loading-overlay {
+   background-color: #333;
+   color: #fff;
+   position: fixed;
+   /* ممكن تخليها ابسليوت بس لو خليت البوزيشن ابسليوت لازم تخلي تدي للبادي اوفر فلو هيدين علشان نخفي السكرول و لما الديف بتاع اللودينج يتشال او يختفي نشيل خاصية الاوبر فلو من البادي علشان السكرول يرجع تاني او احول الاوفر فلو بدل هيدين اخلية اوتو */
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 99999;
+}
+
+.sk-cube-grid {
+   width: 59px;
+   height: 59px;
+   margin: 210px auto;
+}
+
+.sk-cube-grid .sk-cube {
+   width: 33%;
+   height: 33%;
+   background-color: #fff;
+   float: left;
+   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+   -webkit-animation-delay: 0.2s;
+   animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+   -webkit-animation-delay: 0.3s;
+   animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+   -webkit-animation-delay: 0.4s;
+   animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+   -webkit-animation-delay: 0.1s;
+   animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+   -webkit-animation-delay: 0.2s;
+   animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+   -webkit-animation-delay: 0.3s;
+   animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+   -webkit-animation-delay: 0s;
+   animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+   -webkit-animation-delay: 0.1s;
+   animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+   -webkit-animation-delay: 0.2s;
+   animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+   0%,
+   70%,
+   100% {
+      -webkit-transform: scale3D(1, 1, 1);
+      transform: scale3D(1, 1, 1);
+   }
+   35% {
+      -webkit-transform: scale3D(0, 0, 1);
+      transform: scale3D(0, 0, 1);
+   }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+   0%,
+   70%,
+   100% {
+      -webkit-transform: scale3D(1, 1, 1);
+      transform: scale3D(1, 1, 1);
+   }
+   35% {
+      -webkit-transform: scale3D(0, 0, 1);
+      transform: scale3D(0, 0, 1);
+   }
+}
+/* end section loading */
+
+/* start scroll to up */
+#scroll-top {
+   width: 50px;
+   height: 40px;
+   color: #ddd;
+   background-color: #272727;
+   text-align: center;
+   position: fixed;
+   right: 15px;
+   bottom: 10px;
+   z-index: 9999;
+   line-height: 35px;
+   display: none;
+   cursor: pointer;
+}
+#scroll-top:hover {
+   background-color: #444;
+}
+/* end scroll to up */
+
+/* start our grouping system  */
+h1,
+.h1 {
+   margin-bottom: 55px;
+}
+.about,
+.features,
+.testimonial,
+.price-table,
+.our-team .team,
+.subscribe,
+.statistic .data,
+.our-skills,
+.contact-us .fields,
+.our-clients {
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+/* end our grouping system  */
+
+/* Grow Rotate */
+.hvr-grow-rotate {
+   display: inline-block;
+   vertical-align: middle;
+   -webkit-transform: perspective(1px) translateZ(0);
+   transform: perspective(1px) translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -webkit-transition-property: transform;
+   transition-property: transform;
+}
+.hvr-grow-rotate:hover,
+.hvr-grow-rotate:focus,
+.hvr-grow-rotate:active {
+   -webkit-transform: scale(0.9) rotate(-4deg);
+   transform: scale(0.9) rotate(-4deg);
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/* start breadcrumb */
+nav[aria-label='breadcrumb'] {
+   background-color: #dbdcf1;
+}
+.breadcrumb {
+   margin: 0;
+   padding: 10px 0;
+}
+/* end breadcrumb */
+
+/* start about us */
+.about-us {
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+.about-us h2 {
+   letter-spacing: -2px;
+   word-spacing: 5px;
+   font-size: 50px;
+}
+.about-us img {
+   max-width: 100%;
+}
+/* end about us */
+
+/* start feature */
+.about-features {
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+.about-features h3 {
+   margin-top: 20px;
+}
+/* end feature */
+
+/* start about ceo */
+.about-ceo {
+   padding-top: 20px;
+}
+.about-ceo .row {
+   align-items: flex-end;
+}
+.about-ceo img {
+   max-width: 100%;
+}
+.about-ceo h2 {
+   margin-top: 60px;
+   margin-bottom: 20px;
+}
+.about-ceo .row > div:first-child {
+   margin-bottom: 30px;
+}
+/* end about ceo */
+
+/* start FAQ Accordion (collapse or accordion) */
+.faQ h2 {
+   font-family: 'Open Sans', sans-serif !important;
+   font-size: 40px;
+   margin-top: 20px;
+}
+.faQ h2 ~ hr {
+   max-width: 75%;
+   margin: 0 auto 30px;
+}
+.faq-questions {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+.faq-questions a.btn-outline-primary,
+button.btn-outline-primary {
+   margin-top: 10px;
+   position: relative;
+   text-align: left;
+}
+/* .faq-questions a i,
+.faq-questions button i {
+   position: absolute;
+   right: 7px;
+} */
+.faq-questions .card {
+   margin-bottom: 10px;
+}
+
+/* ? the way 1 (using idea and >> as a icon) */
+.faq-questions a[aria-expanded]::after,
+.faq-questions button[aria-expanded]::after {
+   content: '>';
+   font-weight: bold;
+   position: absolute;
+   right: 15px;
+   letter-spacing: -5px;
+   transition: 0.3s;
+}
+.faq-questions a[aria-expanded='true']::after,
+.faq-questions button[aria-expanded='true']::after {
+   transform: rotate(90deg);
+}
+/* ? or the way 2 (using content in befor in font awesome content) */
+/* انت دلوقتي بتدخل علي الفونت اوسم و تيب اي ايكون انت عاوزها و تشوف البيفور بتاعتها الكونتينت بتاعتها اية و تكتبو عندك في ال سي اس اس فبيغير الايكونة الحالية للايكون اللي انت كتبت الكونتينت بتاع البيفور بتاعتها و شرط علشان تعمل الكلام دا لازم تكون حاطط اي ايكونة مبداية في الاتش تي ام ال و بعدين تبقي تعمل اوفر رايد علي الكونتينت بتاع البيفور بتاعتها فبالتالي الايكونة هتتغير */
+/* .faq-questions a[aria-expanded='false'] i::before,
+.faq-questions button[aria-expanded='false'] i::before {
+   content: '\f105';
+}
+.faq-questions a[aria-expanded='true'] i::before,
+.faq-questions button[aria-expanded='true'] i::before {
+   content: '\f107';
+} */
+/* ? or the way 3 (using icon img) */
+/* 
+elemenet:before {
+   content: "";
+   display: block;
+   background: url("icon.jpg") no-repeat;
+   width: 20px;
+   height: 20px;
+   float: left;
+   margin: 0 6px 0 0;
+} */
+.accordion-2 {
+   padding-bottom: 20px;
+}
+/* end FAQ Accordion (collapse or accordion) */

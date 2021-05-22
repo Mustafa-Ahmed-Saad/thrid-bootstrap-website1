@@ -1,0 +1,87 @@
+/**** start default theme ****/
+/* active link */
+.option-box .color-option {
+   border: 2px solid #009aff;
+}
+
+.option-box .div-gear,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.carousel-indicators .active {
+   /* background-color: #bb120f; */
+   background-color: #009aff;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link:hover:not(.active),
+.dropdown-item:hover,
+.dropdown-item:focus,
+.about h1 span,
+.testimonial .carousel-item span,
+.footer h3,
+.footer .copyright span {
+   /* color: #0895d1; */
+   color: #009aff;
+}
+
+.dropdown-menu {
+   border-bottom: 4px solid #009aff;
+   border-top: 3px solid #009aff;
+}
+
+.option-box .lang-option {
+   border: 2px solid #009aff;
+   border-top: none;
+}
+
+.our-skills .progress {
+   /* علشان لو اديتو لون ازرق هتلاقي شكلو وحش لان البروريس بار نفسو ازرق */
+   background-color: #ebe9e9;
+}
+/**** end default theme ****/
+
+/* change scroll style */
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+   /* box-shadow: inset 0 0 5px grey; */
+   box-shadow: inset 0 0 5px #009aff;
+   border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #009aff;
+   border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #0573bd;
+}
+
+/* start about-features  */
+.about-features svg {
+   color: #009aff;
+}
+/* end about-features  */
+
+/* start FAQ Accordion (collapse or accordion) */
+.faq-questions a.btn-outline-primary,
+button.btn-outline-primary {
+   color: #0573bd;
+   border-color: #0573bd;
+}
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 50%);
+}
+.btn-outline-primary:hover {
+   background-color: #0573bd;
+   color: #fff !important;
+}
+.faq-questions .card {
+   box-shadow: 0px 3px 10px 0px #009aff;
+}
+/* end FAQ Accordion (collapse or accordion) */
