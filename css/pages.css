@@ -74,16 +74,12 @@ button.btn-outline-primary {
    position: relative;
    text-align: left;
 }
-/* .faq-questions a i,
-.faq-questions button i {
-   position: absolute;
-   right: 7px;
-} */
+
 .faq-questions .card {
    margin-bottom: 10px;
 }
 
-/* ? the way 1 (using idea and >> as a icon) */
+/* ? (using idea and >> as a icon) */
 .faq-questions a[aria-expanded]::after,
 .faq-questions button[aria-expanded]::after {
    content: '>';
@@ -97,27 +93,8 @@ button.btn-outline-primary {
 .faq-questions button[aria-expanded='true']::after {
    transform: rotate(90deg);
 }
-/* ? or the way 2 (using content in befor in font awesome content) */
-/* انت دلوقتي بتدخل علي الفونت اوسم و تيب اي ايكون انت عاوزها و تشوف البيفور بتاعتها الكونتينت بتاعتها اية و تكتبو عندك في ال سي اس اس فبيغير الايكونة الحالية للايكون اللي انت كتبت الكونتينت بتاع البيفور بتاعتها و شرط علشان تعمل الكلام دا لازم تكون حاطط اي ايكونة مبداية في الاتش تي ام ال و بعدين تبقي تعمل اوفر رايد علي الكونتينت بتاع البيفور بتاعتها فبالتالي الايكونة هتتغير */
-/* .faq-questions a[aria-expanded='false'] i::before,
-.faq-questions button[aria-expanded='false'] i::before {
-   content: '\f105';
-}
-.faq-questions a[aria-expanded='true'] i::before,
-.faq-questions button[aria-expanded='true'] i::before {
-   content: '\f107';
-} */
-/* ? or the way 3 (using icon img) */
-/* 
-elemenet:before {
-   content: "";
-   display: block;
-   background: url("icon.jpg") no-repeat;
-   width: 20px;
-   height: 20px;
-   float: left;
-   margin: 0 6px 0 0;
-} */
+
+
 .accordion-2 {
    padding-bottom: 20px;
 }

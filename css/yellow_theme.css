@@ -1,4 +1,3 @@
-/**** start default theme ****/
 /* active link */
 .option-box .color-option {
    border: 2px solid #9fa600;
@@ -8,7 +7,6 @@
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .carousel-indicators .active {
-   /* background-color: #bb120f; */
    background-color: #9fa600;
 }
 
@@ -20,7 +18,6 @@
 .testimonial .carousel-item span,
 .footer h3,
 .footer .copyright span {
-   /* color: #0895d1; */
    color: #9fa600;
 }
 
@@ -38,13 +35,11 @@
 /**** end default theme ****/
 
 /* change scroll style */
-/* width */
 ::-webkit-scrollbar {
    width: 10px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-   /* box-shadow: inset 0 0 5px grey; */
    box-shadow: inset 0 0 5px #9fa600;
    border-radius: 10px;
 }

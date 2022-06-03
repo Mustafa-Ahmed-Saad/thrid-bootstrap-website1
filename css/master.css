@@ -1,12 +1,10 @@
 /**** start over riding on bootstrap ****/
 html {
-   scroll-behavior: smooth; /* الخاصية دي بتكون في البوت ستراب اصلا بس كتبتها برضو برضو للمعرفة */
+   scroll-behavior: smooth; 
 }
 body {
    overflow: hidden;
-   /* علشان لما الديف بتاع اللودينج يكون موجود و ظاهر ميكونش في سكرول و لكن لما الديف يتشال و الصفحة تكون حملت بنشبل الخاصية دي علشان نرجع السكرول */
    overflow-x: hidden !important; /* Hide horizontal scrollbar */
-   /* علشان لما الانيميشن تطلع و تبدا تظهر مش يعنلي سكرول من تحت و بعدين لما الانيميشن يخلص فالعنصر بيبقي في مكانة فالسكرول بيختفي والكلام دا بيحصل بسرعة بس بيكون شكلو بايخفانا علشان كدا هعمل الخاصية دي علشان اخفي السكرول اللي تحت خالص  */
 }
 
 h1,
@@ -37,7 +35,7 @@ h5 {
    flex-direction: column;
 }
 .option-box .color-option {
-   float: left; /* علشان الجير يجي جنبو */
+   float: left; 
    background-color: #333;
    color: #fff;
    padding: 10px;
@@ -54,7 +52,7 @@ h5 {
    cursor: pointer;
 }
 .option-box .lang-option {
-   float: left; /* علشان الجير يجي جنبو */
+   float: left; 
    background-color: #333;
    color: #fff;
    padding: 10px;
@@ -151,9 +149,6 @@ h5 {
    padding-right: 10px;
 }
 
-/* .carousel-inner {
-  max-height: 90vh;
-} */
 
 .carousel-indicators [data-bs-target] {
    outline: none;
@@ -208,9 +203,7 @@ h5 {
 }
 
 .testimonial .carousel-indicators {
-   position: unset; /* علشان تفضل مكانها و متتحركش */ /* علشان لو خليتها بوزين ابسليوت زي ما هيا واخدة في البوت ستراب هتلاقيها بتطلع للسليدر اللي فوق فاحنا هنلغي منها الوزيشن خالص علشان مش تتخركمن مكانها */
-   /* or */
-   /* position: static; is the defult value*/
+   position: unset;
    margin-top: 25px;
 }
 
@@ -280,10 +273,7 @@ h5 {
 /* start section our team */
 .our-team {
    background: url('../img/animate-gif.gif') no-repeat center center/cover fixed;
-   /* or */
-   /* background: url('../img/team.jpg') no-repeat center center scroll; */
-   /* width: 100%; */
-}
+ }
 .our-team .team {
    background-color: rgba(2, 2, 2, 0.7);
    color: #fff;
@@ -361,7 +351,6 @@ h5 {
 .our-skills .skills-progress .progress-bar.text-start {
    text-indent: 15px;
    width: 0;
-   /* لو مدتش الويدث دا الترانزيشم مش هيشتغل او مش هتحس بية لانك محددتش الويدث اللي في الاول كام لانو بياخد اول فيمة و بعدين يمشي براحة لغاية اخر قيمة لكن انت لو محددثش ويدث صفر هيعتبر اول قيمة هيا اخر قيمة و يروحلها علي طول من غير اي تاثسر ولا اكنك عامل ترانسيشن */
    transition: 3s;
 }
 /* end section our skills */
@@ -469,7 +458,6 @@ h5 {
    background-color: #333;
    color: #fff;
    position: fixed;
-   /* ممكن تخليها ابسليوت بس لو خليت البوزيشن ابسليوت لازم تخلي تدي للبادي اوفر فلو هيدين علشان نخفي السكرول و لما الديف بتاع اللودينج يتشال او يختفي نشيل خاصية الاوبر فلو من البادي علشان السكرول يرجع تاني او احول الاوفر فلو بدل هيدين اخلية اوتو */
    left: 0;
    top: 0;
    width: 100%;
@@ -557,8 +545,8 @@ h5 {
 
 /* start scroll to up */
 #scroll-top {
-   width: 50px;
-   height: 40px;
+  width: 40px;
+  height: 40px;
    color: #ddd;
    background-color: #272727;
    text-align: center;
@@ -569,11 +557,19 @@ h5 {
    line-height: 35px;
    display: none;
    cursor: pointer;
-}
-#scroll-top:hover {
-   background-color: #444;
-}
-/* end scroll to up */
+   border-radius: 50%;
+  }
+  #scroll-top:hover {
+    background-color: #444;
+  }
+  
+  #scroll-top i {
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+  }
+  /* end scroll to up */
 
 /* start our grouping system  */
 h1,
